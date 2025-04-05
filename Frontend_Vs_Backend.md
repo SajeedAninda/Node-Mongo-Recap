@@ -69,3 +69,46 @@ Backend deals with authentication, database operations, API development, and ser
 Tools and Frameworks:
 Common frontend tools and frameworks include React, Vue.js, Tailwind CSS, and Bootstrap.
 Backend developers use tools like Express.js (for Node), Django (Python), Laravel (PHP), and Spring Boot (Java).
+
+
+
+🌐 Static Website vs Dynamic Website
+🔹 Static Website:
+Fixed content, written in HTML/CSS/JS
+
+Every user sees the same page
+
+No interaction with a database
+
+Faster to load, easier to host (can use GitHub Pages, Netlify)
+
+✅ Example:
+A portfolio website
+
+A company’s landing page
+
+🛠 Tech:
+Pure HTML, CSS, JavaScript
+
+Static Site Generators like Jekyll, Hugo
+
+🔸 Dynamic Website:
+Content is generated in real-time
+
+Interacts with a database
+
+Shows personalized or changing content
+
+Usually requires both frontend and backend
+
+✅ Example:
+Facebook, YouTube, Amazon
+
+Blogs with comment sections
+
+🛠 Tech:
+Frontend (React, Vue) + Backend (Node.js, Django)
+
+Databases (MongoDB, MySQL)
+
+APIs to fetch/send data
