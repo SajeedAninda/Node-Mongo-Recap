@@ -97,3 +97,30 @@ Three types: built-in, custom/user-defined, and npm/third-party.
 Use require() to import and module.exports or exports to export.
 
 Encourages clean architecture and code reuse.
+
+
+🏡 What is a Local Module?
+A local module is a custom module that you create in your Node.js project. It’s a separate .js file (or multiple files) that contains reusable logic, which can be imported and used elsewhere in your project.
+
+You use local modules to break your app into smaller pieces, like handling math, authentication, logging, database logic, etc.
+
+✅ Why Use Local Modules?
+Keep code organized and clean
+
+Make logic reusable
+
+Improve maintainability
+
+Easier to test and debug
+
+
+
+🧾 Summary
+A local module is any .js file you create in your project.
+
+Use module.exports to expose values/functions.
+
+Use require('./moduleName') to import it.
+
+Helps organize code and promote reusability.
+
