@@ -43,3 +43,26 @@ server.listen(3000, () => {
   console.log('Server running on http://localhost:3000');
 });
 
+
+
+QUERY PARAMS 
+
+const http = require('http');
+const url = require('url');
+const querystring = require('querystring');
+
+const server = http.createServer((req, res) => {
+  const parsedUrl = url.parse(req.url);
+  const queryParams = querystring.parse(parsedUrl.query);
+
+  console.log(queryParams); // example: { name: 'Aninda', age: '25' }
+
+  res.writeHead(200, { 'Content-Type': 'application/json' });
+  res.end(JSON.stringify({ message: 'Query Received', data: queryParams }));
+});
+
+server.listen(3000, () => {
+  console.log('Server running at http://localhost:3000');
+});
+
+
