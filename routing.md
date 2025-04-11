@@ -23,3 +23,23 @@ const server = http.createServer((req, res) => {
 server.listen(3000, () => {
   console.log('Server running at http://localhost:3000');
 });
+
+
+RESPONSE HEADERS 
+
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  // Set headers
+  res.writeHead(200, {
+    'Content-Type': 'text/html',
+    'X-Powered-By': 'Node.js',
+  });
+
+  res.end('<h1>Hello with headers!</h1>');
+});
+
+server.listen(3000, () => {
+  console.log('Server running on http://localhost:3000');
+});
+
