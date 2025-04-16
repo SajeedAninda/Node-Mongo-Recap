@@ -16,3 +16,21 @@ Parses data from HTML form submissions.
 Used for application/x-www-form-urlencoded content-type (default from HTML <form>).
 
 app.use(express.urlencoded({ extended: true }));
+
+
+
+3️⃣ express.raw()
+Parses raw binary data.
+
+Used when you want the request body as a Buffer without any parsing.
+
+app.use(express.raw());
+✅ Use case:
+File uploads or handling non-standard binary formats.
+
+4️⃣ express.text()
+Parses incoming requests with text/plain content type.
+
+Converts plain text to req.body as a string.
+
+app.use(express.text());
