@@ -93,3 +93,15 @@ const userRoutes = require('./userRoutes');
 app.use('/users', userRoutes);
 
 app.listen(3000, () => console.log('Server running!'));
+
+
+✅ Summary
+Express routing makes it easy to define how your app handles HTTP requests.
+
+Supports route parameters, query parameters, and wildcards.
+
+Scales cleanly using Router for modular code.
+
+Supports middleware chaining before or after routes.
+
+
