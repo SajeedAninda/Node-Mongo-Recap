@@ -55,3 +55,15 @@ app.get('/search', (req, res) => {
     res.send(`Search keyword: ${keyword}`);
 });
 
+
+🧑‍💻 Middleware & Routes
+You can use middleware for pre-processing requests:
+
+app.use((req, res, next) => {
+    console.log('Middleware runs before route');
+    next();
+});
+
+app.get('/', (req, res) => {
+    res.send('Home Page');
+});
