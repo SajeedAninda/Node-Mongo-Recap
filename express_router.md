@@ -67,3 +67,29 @@ app.use((req, res, next) => {
 app.get('/', (req, res) => {
     res.send('Home Page');
 });
+
+
+
+📁 Organizing Routes (Modular Routing)
+You can split routes into different files using express.Router():
+
+userRoutes.js
+
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res) => res.send('User List'));
+router.get('/:id', (req, res) => res.send(`User ID: ${req.params.id}`));
+
+module.exports = router;
+
+
+server.js
+
+const express = require('express');
+const app = express();
+const userRoutes = require('./userRoutes');
+
+app.use('/users', userRoutes);
+
+app.listen(3000, () => console.log('Server running!'));
